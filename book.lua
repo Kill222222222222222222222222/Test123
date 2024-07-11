@@ -1787,7 +1787,7 @@ do
 			local now = os_clock()
 			local dur = NotificationData.Time or 6
 			local TextStr = NotificationData.Text -- or NotificationData.String or NotificationData.Value or NotificationData.Message or NotificationData.Msg
-			--TextStr = ((TextStr == nil) and "No text given") or tostring(TextStr)
+			TextStr = tostring(TextStr)
 			local NotificationObj = {
 				InitTime = now,
 				Active = true,
