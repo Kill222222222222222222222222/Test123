@@ -1789,8 +1789,6 @@ do
 			local TextStr = NotificationData.Text or NotificationData.String or NotificationData.Value or NotificationData.Message or NotificationData.Msg
 			TextStr = ((TextStr == nil) and "No text given") or TextStr
 			print(NotificationData.Message)
-
-
 			local NotificationObj = {
 				InitTime = now,
 				Active = true,
